@@ -21,5 +21,10 @@ namespace NetCoreClient.Sensors
         {
             return JsonSerializer.Serialize(WaterTemperature());
         }
+
+        public string GetSlug()
+        {
+            return "watertemp";
+        }
     }
 }
